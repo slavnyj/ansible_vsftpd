@@ -11,13 +11,3 @@ Example Playbook
       become: yes
       roles:
          - vsftpd 
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-Alexandr Ivanov

@@ -1,4 +1,4 @@
-Role Name
+Simple playbook for install vsftpd
 =========
 
 Install FTP server - vsftpd.

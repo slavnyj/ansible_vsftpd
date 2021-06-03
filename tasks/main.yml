@@ -1,0 +1,12 @@
+---
+# tasks file for vsftpd
+- name: Install vsftpd
+  apt: name=vsftpd state=latest cache_valid_time=3600 update_cache=yes
+
+- name: configure | Start Vsftpd service(s).
+  service: name=vsftpd state=started enabled=yes
+
+- name: Modify configuration file
+  template: src=vsftpd.conf.j2 dest=/etc/vsftpd.conf mode=644
+  notify:
+    - restart vsftpd

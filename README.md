@@ -11,3 +11,5 @@ Example Playbook
       become: yes
       roles:
          - vsftpd 
+
+See playbook in `playbooks` dir
